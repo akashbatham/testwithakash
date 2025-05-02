@@ -1,0 +1,75 @@
+Give your username
+$ git config --global user.name "akash-sps"
+
+Give your email
+$ git config --global user.email akash_batham@softprodigy.com"
+
+These details will be used for knowing who made the update it is not used for login purpose
+
+To initilize a repository - A repository is the location in your system where your project files are located
+$ git init
+Initialized empty Git repository in C:/Users/user/.git/
+
+Touch command is used to create a file in the folder location
+$ touch filename.extension like "students.py"
+
+Now you need to use the add command after creating a file
+$ git add filename.extension
+
+To get the current status
+$ git status
+
+Now we need to commit after making any changes before moving to another file or page to keep the changes secured
+$ git commit -m "add your message here"
+# -m is used to add a message with the commit
+output
+#[master (root-commit) 6905724] I just created a file addstudent.py
+#1 file changed, 0 insertions(+), 0 deletions(-) #create mode 100644 PycharmProjects/PythonSelFramework/addstudent.py
+
+Now you can get the logs for the history of commits
+$ git log
+output
+commit 69057244da6e1acd2844595fc8b69cd698984283 (HEAD -> master)
+Author: akash-sps <akash_batham@softprodigy.com>
+Date:   Thu May 1 10:55:02 2025 +0530
+
+    I just created a file addstudent.py
+
+Now if I check status after modifying the file
+$ git status
+Output
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   addstudent.py
+
+After making changes to file you need to use Add before commiting the files
+$ git add addstudent.py addteacher.py
+
+Now you can add multiple files without writing the names of the files
+$ git add .
+
+Now if you want to use the logs and roll back to the previous commit
+$ git checkout commit-hash-key
+
+
+
+BRANCH
+
+How to get the list of branches you ask
+$ git branch
+
+and to move between multiple branches
+$ git checkout branchname
+
+A branch in git is like a timeline, we can create brach at will
+$ git branch <new-branch-name>
+
+How to merge the changes made in one branch to master
+git merge branchname
+
+
+
+
+GITHUB
